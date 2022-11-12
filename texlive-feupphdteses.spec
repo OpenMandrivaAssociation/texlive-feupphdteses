@@ -1,18 +1,12 @@
-# revision 30962
-# category Package
-# catalog-ctan /macros/latex/contrib/feupphdteses
-# catalog-date 2013-06-19 18:27:53 +0200
-# catalog-license lppl
-# catalog-version 4.0
 Name:		texlive-feupphdteses
-Version:	4.0
-Release:	10
+Version:	30962
+Release:	1
 Summary:	Typeset Engineering PhD theses at the University of Porto
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/feupphdteses
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/feupphdteses.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/feupphdteses.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/feupphdteses.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/feupphdteses.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ da Universidade do Porto (FEUP) Faculty of Engineering
 University of Porto.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -59,7 +53,7 @@ University of Porto.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
