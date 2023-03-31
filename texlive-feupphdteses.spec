@@ -1,6 +1,6 @@
 Name:		texlive-feupphdteses
 Version:	30962
-Release:	1
+Release:	2
 Summary:	Typeset Engineering PhD theses at the University of Porto
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/feupphdteses
