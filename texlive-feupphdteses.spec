@@ -3,7 +3,7 @@ Version:	30962
 Release:	2
 Summary:	Typeset Engineering PhD theses at the University of Porto
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/feupphdteses
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/feupphdteses
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/feupphdteses.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/feupphdteses.doc.r%{version}.tar.xz
